@@ -7,7 +7,8 @@ Inputs required to start the game:
   3. Start the game(yes/no).
 
 Game Rules:
-  1. The one who starts the game chooses a number between 1 and delta(assume that it is stored in 'a').
-  2. The next player has to choose a number between (a+1) and (a+delta) which is also stored in 'a'.
-  3. Repeat the above step until one of the player's output ie. 'a' is in the range of (a+1<= endpoint >=a+delta).
-  4. The player whose answer was in the range of (a+1<= endpoint >=a+delta) losses the game.
+  0. Choose two numbers randomly. call it delta and endpoint, where endpoint > delta.
+  1. The one who starts the game chooses a number 'a' between 1 and delta
+  2. The next player has to choose another number between (a+1) and (a + delta)
+  3. Repeat the second step until one of the player's chosen number (ie. 'a') is **a+1<= endpoint >=a+delta**.
+  4. Finally, the player whose answer was in the range of **a+1<= endpoint >=a+delta** losses the game.
